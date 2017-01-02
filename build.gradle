@@ -11,7 +11,7 @@ buildscript {
 }
 
 apply plugin: 'java'
-apply plugin: 'eclipse'
+//apply plugin: 'eclipse'
 apply plugin: 'org.springframework.boot'
 
 jar {
@@ -29,4 +29,6 @@ repositories {
 dependencies {
 	compile('org.springframework.boot:spring-boot-starter-web')
 	testCompile('org.springframework.boot:spring-boot-starter-test')
+	compile group: 'org.webjars', name: 'angularjs', version: '1.4.9'
+	compile group: 'org.webjars', name: 'bootstrap', version: '3.3.6'
 }

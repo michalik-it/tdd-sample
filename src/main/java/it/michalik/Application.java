@@ -3,10 +3,10 @@ package it.michalik;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-@SpringBootApplication
-public class TddSampleApplication {
+@SpringBootApplication(scanBasePackages = "it.michalik")
+public class Application {
 
 	public static void main(String[] args) {
-		SpringApplication.run(TddSampleApplication.class, args);
+		SpringApplication.run(Application.class, args);
 	}
 }
